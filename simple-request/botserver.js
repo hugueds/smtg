@@ -1,6 +1,6 @@
 const rq = require('request');
 
-var key = '289160806:AAE50V3tvENTrQB9Ynla_Oyav6RqsV914EM';
+var key = process.env.BOT_KEY;
 
 var url = 'https://api.telegram.org/bot'+key+'/sendMessage';
 
@@ -8,7 +8,7 @@ var myId = 170236635;
 
 var form = {
 	chat_id : 170236635, 
-	text : "<strong> EITA </strong>",
+	text : "<strong> TEST!! </strong>",
 	parse_mode : 'HTML'
 };
 
