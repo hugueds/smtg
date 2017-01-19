@@ -4,3 +4,12 @@
 //  3. Get all POPIDs in All Stations
 //  4. Get an 
 //  5. 
+
+const events = require('events');
+const bot = new events.EventEmitter();
+
+bot.on('/date', function(data, callback){
+    var date = new Date().toLocaleDateString();    
+});
+
+module.exports = bot;
